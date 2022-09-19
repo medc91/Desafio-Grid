@@ -1,0 +1,93 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "menu main main main"
+        "menu main main main"
+        "footer footer footer footer";
+    grid-template-columns: 15% repeat(3, 1fr);
+
+}
+
+menu {
+    grid-area: menu;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+menu h2 {
+    margin-bottom: 0;
+}
+
+menu p{
+    margin-top: 8px;
+margin-bottom: 0;
+color: black;
+}
+
+.categoria :hover{
+    background-color: grey;
+
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: peru;
+    color: #fff;
+    padding: 5px;
+}
+
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: peru;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
+main {
+    grid-area: main;
+    background-color: peachpuff;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 300px;
+}
+
+.card-body{
+    background-color: #fff;
+    text-align: center;
+}
+
+.button{
+    background-color: peru;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.button:hover{
+    background-color: peachpuff;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
